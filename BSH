@@ -1,0 +1,1 @@
+Select N,  IIF(P IS  NULL,"Root", IIF((select count(*) from BST  where P=b.N) > 0,"Inner","LEAF") ) from BST as b order by N;
